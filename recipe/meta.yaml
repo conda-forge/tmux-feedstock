@@ -1,4 +1,4 @@
-{% set version = "2.2" %}
+{% set version = "2.3" %}
 
 package:
   name: tmux
@@ -7,7 +7,7 @@ package:
 source:
   fn: tmux-{{ version }}.tar.gz
   url: https://github.com/tmux/tmux/archive/{{ version }}.tar.gz
-  sha256: f17f4d98454bd87d0065047ef0a4cf78da180ec5e957124bedee3a5fdd72a598
+  sha256: 8847b6f7b93a095b1d5dcd318bc6837b86ebb42d09394d17c231590758cd9386
 
 build:
   number: 0
