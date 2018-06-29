@@ -1,0 +1,11 @@
+c_compiler:
+- toolchain_c
+libevent:
+- 2.0.22
+ncurses:
+- '6.1'
+pin_run_as_build:
+  libevent:
+    max_pin: x.x.x
+  ncurses:
+    max_pin: x.x

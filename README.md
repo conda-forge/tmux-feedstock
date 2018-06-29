@@ -14,14 +14,16 @@ Summary: A terminal multiplexer.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/tmux-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/tmux-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/tmux-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/tmux-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/tmux-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/tmux-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/tmux-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/tmux-feedstock)
+![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/tmux/badges/version.svg)](https://anaconda.org/conda-forge/tmux)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/tmux/badges/downloads.svg)](https://anaconda.org/conda-forge/tmux)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-tmux-green.svg)](https://anaconda.org/conda-forge/tmux) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/tmux.svg)](https://anaconda.org/conda-forge/tmux) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/tmux.svg)](https://anaconda.org/conda-forge/tmux) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/tmux.svg)](https://anaconda.org/conda-forge/tmux) |
 
 Installing tmux
 ===============
