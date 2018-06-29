@@ -10,23 +10,24 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
   build:
-    - toolchain
     - autoconf
     - automake
     - libtool
-    - m4
     - pkg-config
-    - libevent 2.0.22
-    - ncurses 5.9
+    - {{ compiler('c') }}
+  host:
+    - m4
+    - libevent
+    - ncurses
 
   run:
-    - libevent 2.0.22
-    - ncurses 5.9
+    - libevent
+    - ncurses
 
 test:
   commands:
