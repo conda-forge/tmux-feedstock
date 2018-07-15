@@ -15,11 +15,11 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
     - autoconf
     - automake
     - libtool
     - pkg-config
-    - {{ compiler('c') }}
   host:
     - m4
     - libevent
