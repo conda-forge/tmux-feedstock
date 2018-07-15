@@ -1,5 +1,5 @@
 {% set version = "2.7" %}
-{% set sha256 = "fbfede3d8af83d62f5d285a91214297c2bc90e7167bac79ffa10650fcbb640f9" %}
+{% set sha256 = "89e4774db7d238b1ee515c4527ef90153f0c3cd8ad3e3fde5c01fbbb27fd01a6" %}
 
 package:
   name: tmux
@@ -10,23 +10,24 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
   build:
-    - toolchain
+    - {{ compiler('c') }}
     - autoconf
     - automake
     - libtool
     - m4
     - pkg-config
-    - libevent 2.0.22
-    - ncurses 5.9
+  host:
+    - libevent
+    - ncurses
 
   run:
-    - libevent 2.0.22
-    - ncurses 5.9
+    - libevent
+    - ncurses
 
 test:
   commands:
