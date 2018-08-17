@@ -1,16 +1,16 @@
 {% set version = "2.7" %}
-{% set sha256 = "89e4774db7d238b1ee515c4527ef90153f0c3cd8ad3e3fde5c01fbbb27fd01a6" %}
+{% set sha256 = "9ded7d100313f6bc5a87404a4048b3745d61f2332f99ec1400a7c4ed9485d452" %}
 
 package:
   name: tmux
   version: {{ version }}
 
 source:
-  url: https://github.com/tmux/tmux/archive/{{ version }}.tar.gz
+  url: https://github.com/tmux/tmux/releases/download/{{ version }}/tmux-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
 
 requirements:
