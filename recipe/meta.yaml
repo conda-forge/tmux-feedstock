@@ -21,6 +21,7 @@ requirements:
     - libtool
     - m4
     - pkg-config
+
   host:
     - libevent
     - ncurses
