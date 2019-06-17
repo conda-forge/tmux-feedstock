@@ -9,7 +9,7 @@ channel_sources:
 channel_targets:
 - conda-forge main
 libevent:
-- 2.0.22
+- 2.1.10
 macos_machine:
 - x86_64-apple-darwin13.4.0
 macos_min_version:

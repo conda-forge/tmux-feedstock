@@ -9,7 +9,7 @@ channel_targets:
 docker_image:
 - condaforge/linux-anvil-comp7
 libevent:
-- 2.0.22
+- 2.1.10
 ncurses:
 - '6.1'
 pin_run_as_build:
