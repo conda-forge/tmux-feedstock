@@ -5,7 +5,7 @@ Home: https://tmux.github.io/
 
 Package license: ISC
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A terminal multiplexer.
 
