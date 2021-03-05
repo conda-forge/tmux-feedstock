@@ -1,23 +1,23 @@
 MACOSX_DEPLOYMENT_TARGET:
-- '10.9'
+- '11.0'
 c_compiler:
 - clang
 c_compiler_version:
-- '9'
+- '11'
 channel_sources:
-- conda-forge,defaults
+- conda-forge
 channel_targets:
 - conda-forge main
 libevent:
 - 2.1.10
 macos_machine:
-- x86_64-apple-darwin13.4.0
-macos_min_version:
-- '10.9'
+- arm64-apple-darwin20.0.0
 ncurses:
-- '6.1'
+- '6.2'
 pin_run_as_build:
   libevent:
     max_pin: x.x.x
   ncurses:
     max_pin: x.x
+target_platform:
+- osx-arm64
