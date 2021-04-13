@@ -1,5 +1,5 @@
-{% set version = "3.1" %}
-{% set sha256 = "979bf38db2c36193de49149aaea5c540d18e01ccc27cf76e2aff5606bd186722" %}
+{% set version = "3.2" %}
+{% set sha256 = "664d345338c11cbe429d7ff939b92a5191e231a7c1ef42f381cebacb1e08a399" %}
 
 package:
   name: tmux
