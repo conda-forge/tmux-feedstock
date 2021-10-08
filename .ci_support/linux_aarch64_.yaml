@@ -1,15 +1,19 @@
+BUILD:
+- aarch64-conda_cos7-linux-gnu
 c_compiler:
 - gcc
 c_compiler_version:
 - '9'
+cdt_arch:
+- aarch64
 cdt_name:
-- cos6
+- cos7
 channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
 docker_image:
-- quay.io/condaforge/linux-anvil-comp7
+- quay.io/condaforge/linux-anvil-aarch64
 libevent:
 - 2.1.10
 ncurses:
@@ -20,7 +24,4 @@ pin_run_as_build:
   ncurses:
     max_pin: x.x
 target_platform:
-- linux-64
-zip_keys:
-- - cdt_name
-  - docker_image
+- linux-aarch64

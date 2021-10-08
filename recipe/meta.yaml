@@ -21,6 +21,7 @@ requirements:
     - automake
     - libtool
     - m4
+    - make
     - pkg-config
 
   host:
