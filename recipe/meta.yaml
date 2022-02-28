@@ -1,5 +1,5 @@
-{% set version = "3.1" %}
-{% set sha256 = "979bf38db2c36193de49149aaea5c540d18e01ccc27cf76e2aff5606bd186722" %}
+{% set version = "3.2a" %}
+{% set sha256 = "551553a4f82beaa8dadc9256800bcc284d7c000081e47aa6ecbb6ff36eacd05f" %}
 
 package:
   name: tmux
@@ -8,6 +8,8 @@ package:
 source:
   url: https://github.com/tmux/tmux/releases/download/{{ version }}/tmux-{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - configure.ac.patch
 
 build:
   number: 0
@@ -22,6 +24,7 @@ requirements:
     - libtool
     - m4
     - make
+    - patch
     - pkg-config
 
   host:
@@ -50,3 +53,4 @@ extra:
   recipe-maintainers:
     - jakirkham
     - djsutherland
+    - dbast
