@@ -8,8 +8,6 @@ package:
 source:
   url: https://github.com/tmux/tmux/releases/download/{{ version }}/tmux-{{ version }}.tar.gz
   sha256: {{ sha256 }}
-  patches:
-    - configure.ac.patch
 
 build:
   number: 0
