@@ -27,6 +27,7 @@ requirements:
 
   host:
     - libevent
+    - libutf8proc
     - ncurses
 
   run:
