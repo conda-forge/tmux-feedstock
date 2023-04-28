@@ -3,13 +3,13 @@ MACOSX_DEPLOYMENT_TARGET:
 c_compiler:
 - clang
 c_compiler_version:
-- '14'
+- '15'
 channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
 libevent:
-- 2.1.10
+- 2.1.12
 macos_machine:
 - x86_64-apple-darwin13.4.0
 ncurses:
