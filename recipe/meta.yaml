@@ -1,5 +1,5 @@
-{% set version = "3.3a" %}
-{% set sha256 = "e4fd347843bd0772c4f48d6dde625b0b109b7a380ff15db21e97c11a4dcdf93f" %}
+{% set version = "3.4" %}
+{% set sha256 = "551ab8dea0bf505c0ad6b7bb35ef567cdde0ccb84357df142c254f35a23e19aa" %}
 
 package:
   name: tmux
@@ -10,7 +10,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
 
 requirements:
@@ -24,6 +24,7 @@ requirements:
     - make
     - patch
     - pkg-config
+    - bison
 
   host:
     - libevent
