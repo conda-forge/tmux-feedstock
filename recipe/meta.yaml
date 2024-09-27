@@ -1,5 +1,5 @@
-{% set version = "3.4" %}
-{% set sha256 = "551ab8dea0bf505c0ad6b7bb35ef567cdde0ccb84357df142c254f35a23e19aa" %}
+{% set version = "3.5" %}
+{% set sha256 = "2fe01942e7e7d93f524a22f2c883822c06bc258a4d61dba4b407353d7081950f" %}
 
 package:
   name: tmux
@@ -17,6 +17,7 @@ requirements:
   build:
     - gnuconfig  # [unix]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - autoconf
     - automake
     - libtool
