@@ -194,4 +194,5 @@ Feedstock Maintainers
 * [@djsutherland](https://github.com/djsutherland/)
 * [@jakirkham](https://github.com/jakirkham/)
 * [@matthiasdiener](https://github.com/matthiasdiener/)
+* [@seowalex](https://github.com/seowalex/)
 
