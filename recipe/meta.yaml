@@ -1,5 +1,5 @@
-{% set version = "3.5" %}
-{% set sha256 = "2fe01942e7e7d93f524a22f2c883822c06bc258a4d61dba4b407353d7081950f" %}
+{% set version = "3.5a" %}
+{% set sha256 = "16216bd0877170dfcc64157085ba9013610b12b082548c7c9542cc0103198951" %}
 
 package:
   name: tmux
@@ -56,3 +56,4 @@ extra:
     - djsutherland
     - dbast
     - matthiasdiener
+    - seowalex
