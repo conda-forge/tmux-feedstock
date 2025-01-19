@@ -17,7 +17,7 @@ channel_targets:
 libevent:
 - 2.1.12
 libutf8proc:
-- '2.9'
+- '2.10'
 macos_machine:
 - arm64-apple-darwin20.0.0
 ncurses:
