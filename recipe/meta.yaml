@@ -1,12 +1,19 @@
-{% set version = "3.6" %}
-{% set sha256 = "136db80cfbfba617a103401f52874e7c64927986b65b1b700350b6058ad69607" %}
+# NOTE: Due to https://github.com/conda-forge/tmux-feedstock/issues/36,
+# versions without a letter suffix MUST have an underscore added at the end
+# of the version number to ensure correct version ordering when using conda.
+# e.g.,
+# {% set version = "3.7_" %}, for version 3.7, not {% set version = "3.7" %}.
+# {% set version = "3.7a" %} is fine.
+{% set version = "3.6a" %}
+{% set version_nounderscore = version.replace("_", "") %}
+{% set sha256 = "b6d8d9c76585db8ef5fa00d4931902fa4b8cbe8166f528f44fc403961a3f3759" %}
 
 package:
   name: tmux
   version: {{ version }}
 
 source:
-  url: https://github.com/tmux/tmux/releases/download/{{ version }}/tmux-{{ version }}.tar.gz
+  url: https://github.com/tmux/tmux/releases/download/{{ version_nounderscore }}/tmux-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -39,10 +46,12 @@ requirements:
 test:
   commands:
     # Verify command existence.
-    - which tmux
+    - test -f $PREFIX/bin/tmux
+    - $PREFIX/bin/tmux -V  # [build_platform == target_platform]
 
     # Check that no server is running.
     - $(tmux info || true) 2> >(grep "no server running on")
+
 
 about:
   home: https://tmux.github.io/
