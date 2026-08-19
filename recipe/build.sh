@@ -10,7 +10,8 @@ cp $BUILD_PREFIX/share/gnuconfig/config.* ./etc
 if [[ ${target_platform} =~ linux.* ]]; then
   ./configure --prefix=$PREFIX --enable-sixel
 else
-  ./configure --prefix=$PREFIX --enable-sixel --enable-utf8proc
+  export CPPFLAGS="${CPPFLAGS} -DJEMALLOC_MANGLE"
+  ./configure --prefix=$PREFIX --enable-sixel --enable-utf8proc --enable-jemalloc
 fi
 
 make
