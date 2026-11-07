@@ -13,7 +13,7 @@ channel_sources:
 channel_targets:
 - conda-forge main
 libevent:
-- 2.1.12
+- 2.1.13
 libutf8proc:
 - '2.12'
 macos_machine:
